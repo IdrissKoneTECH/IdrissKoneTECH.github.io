@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <!-- ============ NAVIGATION ============ -->
     <nav class="navbar" id="navbar">
         <div class="nav-content">
             <div class="nav-logo">IK.</div>
@@ -18,8 +17,7 @@
                 <li><a href="#about">Profil</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#veille">Veille</a></li>
+                <li><a href="#experience">Expérience</a></li>
                 <li><a href="#softskills">Qualités</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,9 +29,7 @@
         </div>
     </nav>
 
-    <!-- ============ HERO ============ -->
     <header class="hero" id="hero">
-        <canvas id="heroCanvas" class="hero-canvas"></canvas>
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="pulse"></span>
@@ -46,24 +42,23 @@
                 Administrateur Systèmes, Réseaux & Sécurité
             </p>
             <p class="hero-subtitle">
-                Licence Professionnelle <strong>ASSR</strong> — <strong>PST&B / UPEC</strong><br>
+                Licence Professionnelle <strong>ASSR</strong> à la <strong>PST&B</strong><br>
                 Rythme : 3 jours entreprise / 2 jours école
             </p>
             <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">
                     ✉️ Me contacter
                 </a>
-                <a href="Idriss_KONE_CV_Alternance_ASSR_photo.pdf" class="btn btn-outline" target="_blank">
-                    📄 Télécharger mon CV
-                </a>
                 <a href="#projects" class="btn btn-outline">
                     🔍 Voir mes projets
+                </a>
+                <a href="Idriss_KONE_CV_Alternance_ASSR_photo.pdf" download class="btn btn-outline">
+                    📄 Télécharger mon CV
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
         <div class="reveal">
             <span class="section-label">À propos</span>
@@ -72,14 +67,15 @@
         <div class="about-content">
             <div class="about-text reveal">
                 <p>
-                    Actuellement en fin de cursus <strong>BTS CIEL option Informatique et Réseaux</strong> 
-                    (diplôme prévu en juillet 2026), je suis d'ores et déjà <strong>admis</strong> en 
-                    <strong>Licence Professionnelle ASSR</strong> à la PST&B / UPEC pour la rentrée de septembre 2026.
+                    Futur étudiant en Licence Professionnelle ASSR et actuellement en fin de cursus 
+                    <strong>BTS CIEL option Informatique et Réseaux</strong>, je me spécialise dans le 
+                    maintien en condition opérationnelle, la supervision et la sécurisation des 
+                    infrastructures.
                 </p>
                 <p>
-                    Mon objectif actuel est de trouver une entreprise d'accueil pour effectuer mon 
-                    <strong>alternance de 12 mois</strong> dans les domaines de l'administration systèmes, 
-                    réseaux et sécurité, afin de mettre en pratique mes compétences académiques.
+                    Rigoureux, calme sous pression et doté d'une solide expérience de terrain, 
+                    je cherche à mettre mes compétences au service d'une entreprise pour un 
+                    <strong>contrat d'alternance de 12 mois</strong>.
                 </p>
             </div>
             <div class="about-info reveal">
@@ -93,15 +89,15 @@
                 <div class="info-card">
                     <div class="info-icon emerald">🎓</div>
                     <div>
-                        <div class="info-label">Formation actuelle</div>
-                        <div class="info-value">BTS CIEL — IR (fin juillet 2026)</div>
+                        <div class="info-label">Formation en cours</div>
+                        <div class="info-value">BTS CIEL — IR (Informatique & Réseaux)</div>
                     </div>
                 </div>
                 <div class="info-card">
-                    <div class="info-icon violet">✅</div>
+                    <div class="info-icon violet">🎯</div>
                     <div>
-                        <div class="info-label">Admis</div>
-                        <div class="info-value">LP ASSR — PST&B / UPEC (sept. 2026)</div>
+                        <div class="info-label">Objectif</div>
+                        <div class="info-value">LP ASSR — Alternance 12 mois</div>
                     </div>
                 </div>
                 <div class="info-card">
@@ -115,7 +111,6 @@
         </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
     <section class="section" id="skills">
         <div class="reveal">
             <span class="section-label">Expertise</span>
@@ -126,14 +121,14 @@
                 <div class="skill-icon">🛠️</div>
                 <h3 class="skill-title">Support Informatique</h3>
                 <p class="skill-desc">
-                    Gestion d'incidents du diagnostic à la résolution, 
-                    intervention sur les niveaux 1 à 3 et maintien en condition opérationnelle.
+                    Gestion d'incidents de bout en bout, du diagnostic à la résolution. 
+                    Intervention sur les niveaux 1 à 3, avec un sens aigu du service utilisateur.
                 </p>
                 <div class="skill-tags">
                     <span class="skill-tag">N1 → N3</span>
                     <span class="skill-tag">Ticketing</span>
                     <span class="skill-tag">MCO</span>
-                    <span class="skill-tag">VMware</span>
+                    <span class="skill-tag">Diagnostic</span>
                 </div>
             </div>
             <div class="skill-card reveal">
@@ -141,230 +136,131 @@
                 <h3 class="skill-title">Administration Serveurs</h3>
                 <p class="skill-desc">
                     Déploiement et administration d'environnements Windows Server et Linux. 
-                    Gestion des annuaires Active Directory et politiques de sécurité.
+                    Gestion des annuaires Active Directory, GPO et politiques de sécurité.
                 </p>
                 <div class="skill-tags">
                     <span class="skill-tag">Windows Server</span>
                     <span class="skill-tag">Active Directory</span>
                     <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">VMware</span>
+                    <span class="skill-tag">GPO</span>
                 </div>
             </div>
             <div class="skill-card reveal">
                 <div class="skill-icon">🌐</div>
                 <h3 class="skill-title">Réseaux & Sécurité</h3>
                 <p class="skill-desc">
-                    Configuration de topologies réseau, routage IP, segmentation VLAN 
-                    et sécurisation des flux de données.
+                    Configuration de topologies réseau, routage IP, segmentation VLAN. 
+                    Maîtrise des protocoles fondamentaux et des mécanismes de sécurisation des flux.
                 </p>
                 <div class="skill-tags">
                     <span class="skill-tag">IPv4 / IPv6</span>
                     <span class="skill-tag">VLAN</span>
                     <span class="skill-tag">DHCP</span>
                     <span class="skill-tag">DNS</span>
-                    <span class="skill-tag">Cisco Packet Tracer</span>
+                    <span class="skill-tag">Routage</span>
                 </div>
             </div>
             <div class="skill-card reveal">
                 <div class="skill-icon">📊</div>
-                <h3 class="skill-title">Développement & Outils</h3>
+                <h3 class="skill-title">Supervision & Monitoring</h3>
                 <p class="skill-desc">
-                    Développement web, programmation embarquée et utilisation d'outils 
-                    de simulation et de conception technique.
+                    Surveillance d'infrastructures en temps réel. Détection proactive des anomalies 
+                    et maintien de la disponibilité des services critiques.
                 </p>
                 <div class="skill-tags">
-                    <span class="skill-tag">HTML/CSS/PHP</span>
-                    <span class="skill-tag">Arduino</span>
-                    <span class="skill-tag">Proteus</span>
-                    <span class="skill-tag">Matlab</span>
-                    <span class="skill-tag">Solidworks</span>
+                    <span class="skill-tag">Cisco</span>
+                    <span class="skill-tag">Monitoring</span>
+                    <span class="skill-tag">Alerting</span>
+                    <span class="skill-tag">Temps réel</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
     <section class="section" id="projects">
         <div class="reveal">
             <span class="section-label">Réalisations</span>
             <h2 class="section-title">Projets</h2>
         </div>
 
-        <!-- Projet Phare -->
         <div class="project-featured reveal">
             <div class="project-label">⭐ Projet Phare — Épreuve E6 BTS CIEL</div>
-            <h3 class="project-title">Infrastructure IoT — Casque Connecté</h3>
-            <span class="project-period">Janvier 2026 — Juin 2026</span>
+            <h3 class="project-title">Conception d'une Infrastructure IoT — Casque Connecté</h3>
+            <span class="project-period">Janvier 2025 — Juin 2025</span>
             <p class="project-desc">
-                Gestion d'un réseau maillé et sécurisation des flux de communication 
-                (alertes capteurs vers serveur). Mise en place de la supervision en temps réel (monitoring).
+                Étude et déploiement d'une topologie réseau maillé sécurisée pour la remontée de signaux 
+                de capteurs. Implémentation des règles de routage, sécurisation des flux de données et 
+                configuration d'un outil de monitoring en temps réel pour la supervision de l'infrastructure.
             </p>
             <div class="project-tech">
                 <span>Réseau maillé</span>
                 <span>IoT</span>
+                <span>Routage</span>
                 <span>Sécurisation</span>
                 <span>Monitoring</span>
                 <span>Capteurs</span>
             </div>
-            <div class="project-actions">
-                <a href="docs/Casque_Connecte_Documentation.pdf" class="btn btn-outline btn-sm" target="_blank">
-                    📄 Doc Technique
-                </a>
-                <a href="docs/Casque_Connecte_Rapport.pdf" class="btn btn-outline btn-sm" target="_blank">
-                    📊 Rapport E6
-                </a>
-            </div>
         </div>
 
-        <!-- Projets secondaires -->
         <div class="projects-grid">
             <div class="project-card reveal">
                 <h3 class="project-title">Alarme Feux de Forêts</h3>
                 <span class="project-period">Janvier 2024 — Juin 2024</span>
                 <p class="project-desc">
-                    Responsable de la communication entre le système d'acquisition de données et l'IHM.
+                    Diagnostic de connectivité réseau et analyse des signaux de capteurs connectés. 
+                    Projet académique de détection et de prévention des risques environnementaux.
                 </p>
                 <div class="project-role">Projet Académique</div>
-                <div class="project-actions">
-                    <a href="docs/Alarme_Feux_Rapport.pdf" class="btn btn-outline btn-sm" target="_blank">
-                        📄 Rapport Technique
-                    </a>
-                </div>
             </div>
             <div class="project-card reveal">
                 <h3 class="project-title">Déploiement ADP — Orly</h3>
                 <span class="project-period">Novembre 2024 — Décembre 2024</span>
                 <p class="project-desc">
-                    Maintenance informatique, mastérisation et installation de matériel. 
-                    Gestion de réseaux et assistance technique aux utilisateurs.
+                    Mastérisation et déploiement de postes, maintenance curative et traitement 
+                    des anomalies matérielles et logicielles en environnement aéroportuaire.
                 </p>
                 <div class="project-role">Mission Professionnelle</div>
-                <div class="project-actions">
-                    <a href="docs/ADP_Orly_Rapport.pdf" class="btn btn-outline btn-sm" target="_blank">
-                        📄 Rapport d'Activité
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ PARCOURS ============ -->
-    <section class="section" id="parcours">
+    <section class="section" id="experience">
         <div class="reveal">
-            <span class="section-label">Mon Cursus</span>
-            <h2 class="section-title">Parcours Académique & Pro</h2>
+            <span class="section-label">Parcours</span>
+            <h2 class="section-title">Expériences Professionnelles</h2>
         </div>
-        <div class="parcours-grid">
-            <!-- Formations -->
-            <div class="parcours-column reveal">
-                <h3 class="parcours-subtitle">🎓 Formations</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-period">2026 — 2027</div>
-                            <h4 class="timeline-title">Licence Pro ASSR</h4>
-                            <div class="timeline-institution">PST&B / UPEC (Admis)</div>
-                            <p class="timeline-desc-text">
-                                Administration et Sécurité des Systèmes et des Réseaux. En double diplôme.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-period">2024 — 2026</div>
-                            <h4 class="timeline-title">BTS CIEL (Option IR)</h4>
-                            <div class="timeline-institution">Lycée Langevin Wallon (Champigny)</div>
-                            <p class="timeline-desc-text">
-                                Informatique et Réseaux. MCO, supervision et sécurisation d'infrastructures.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-period">2022 — 2024</div>
-                            <h4 class="timeline-title">Baccalauréat STI2D</h4>
-                            <div class="timeline-institution">Lycée Louis Armand (Nogent)</div>
-                            <p class="timeline-desc-text">
-                                Sciences et Technologies de l'Industrie (Option Systèmes d'Information et Numérique).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Expériences -->
-            <div class="parcours-column reveal">
-                <h3 class="parcours-subtitle">💼 Expériences</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-period">Nov 2024 — Déc 2024</div>
-                            <h4 class="timeline-title">Technicien Support Proximité</h4>
-                            <div class="timeline-company">Econocom — Orly (ADP)</div>
-                            <ul class="timeline-desc">
-                                <li>Maintenance et mastérisation de postes de travail</li>
-                                <li>Installation d'équipements et assistance utilisateur</li>
-                                <li>Gestion de la connectivité réseau locale</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-period">Jan 2024 — Juin 2024</div>
-                            <h4 class="timeline-title">Alarme Feux de Forêts</h4>
-                            <div class="timeline-company">Projet Académique BTS</div>
-                            <ul class="timeline-desc">
-                                <li>Interfaçage entre système d'acquisition et IHM</li>
-                                <li>Vérification et diagnostic de la liaison réseau</li>
-                                <li>Analyse et traitement des flux de capteurs</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ VEILLE TECHNOLOGIQUE ============ -->
-    <section class="section" id="veille">
-        <div class="reveal">
-            <span class="section-label">Veille Technologique</span>
-            <h2 class="section-title">Sécurisation des architectures IoT</h2>
-        </div>
-        <div class="veille-container reveal">
-            <div class="veille-header">
-                <div class="veille-badge">🛡️ Thème : Sécurité IoT en entreprise</div>
-                <a href="docs/Veille_Technologique_IoT.pdf" class="btn btn-outline btn-sm" target="_blank">
-                    📄 Synthèse de Veille (PDF)
-                </a>
-            </div>
-            <div class="veille-grid">
-                <div class="veille-info-card">
-                    <h4>🎯 Problématique</h4>
-                    <p>Comment sécuriser l'intégration massive d'objets connectés (IoT) au sein des réseaux d'entreprise face aux vulnérabilités matérielles et logicielles ?</p>
-                </div>
-                <div class="veille-info-card">
-                    <h4>⚙️ Axes d'étude</h4>
-                    <ul>
-                        <li>Analyse des vulnérabilités des firmwares et des protocoles légers (MQTT, CoAP).</li>
-                        <li>Architecture de protection (segmentation réseau VLAN, chiffrement de bout en bout).</li>
-                        <li>Supervision et détection d'anomalies de trafic IoT (Zero Trust).</li>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-period">Nov 2024 — Déc 2024</div>
+                    <h3 class="timeline-title">Technicien Support Proximité</h3>
+                    <div class="timeline-company">Econocom — Déploiement au Groupe ADP, Aéroport d'Orly</div>
+                    <ul class="timeline-desc">
+                        <li>Maintien en condition opérationnelle (MCO) de l'infrastructure</li>
+                        <li>Maintenance curative et préventive des équipements</li>
+                        <li>Mastérisation et déploiement de postes de travail</li>
+                        <li>Traitement des anomalies matérielles et logicielles</li>
+                        <li>Support utilisateurs en environnement aéroportuaire</li>
                     </ul>
                 </div>
-                <div class="veille-info-card">
-                    <h4>🛠️ Méthodologie</h4>
-                    <p>Suivi continu via agrégateurs RSS (FreshRSS), alertes thématiques (Google Alerts), et surveillance des avis de sécurité (ANSSI, Cert-FR, bases CVE/NVD).</p>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-period">Jan 2024 — Juin 2024</div>
+                    <h3 class="timeline-title">Projet Académique — Alarme Feux de Forêts</h3>
+                    <div class="timeline-company">BTS CIEL — Informatique & Réseaux</div>
+                    <ul class="timeline-desc">
+                        <li>Diagnostic de connectivité réseau</li>
+                        <li>Analyse des signaux de capteurs connectés</li>
+                        <li>Contribution à la conception du système de détection</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SOFT SKILLS ============ -->
     <section class="section" id="softskills">
         <div class="reveal">
             <span class="section-label">Savoir-être</span>
@@ -373,22 +269,25 @@
         <div class="soft-skills-grid">
             <div class="soft-card reveal">
                 <span class="soft-emoji">🎤</span>
-                <h3 class="soft-title">Éloquence & Gestion</h3>
+                <h3 class="soft-title">Leadership & Communication</h3>
                 <p class="soft-desc">
-                    En tant que délégué de classe et membre élu du Conseil d'Administration, cette expérience m'a appris à gérer divers dossiers et a grandement développé mon éloquence et ma prise de parole.
+                    Membre élu du Conseil d'Administration et Délégué de classe. 
+                    Gestion de collectif, sens de l'écoute et capacité à fédérer une équipe 
+                    autour d'objectifs communs.
                 </p>
             </div>
             <div class="soft-card reveal">
                 <span class="soft-emoji">🏈</span>
-                <h3 class="soft-title">Football Américain (Haut Niveau)</h3>
+                <h3 class="soft-title">Discipline & Esprit d'équipe</h3>
                 <p class="soft-desc">
-                    Pratiquant ce sport à <strong>haut niveau</strong>, j'y ai développé une grande rigueur, un fort esprit d'équipe et la capacité à rester concentré sous pression.
+                    Pratique du Football Américain à haut niveau. Rigueur, engagement, 
+                    maîtrise de soi face aux situations critiques et esprit de compétition 
+                    sain et constructif.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
     <section class="section" id="contact">
         <div class="reveal">
             <span class="section-label">Échangeons</span>
@@ -396,21 +295,18 @@
         </div>
         <div class="contact-wrapper reveal">
             <p class="contact-text">
-                Ouvert à toute opportunité d'alternance dans l'administration systèmes, réseaux et sécurité.<br>
-                N'hésitez pas à me contacter si mon profil correspond à vos attentes.
+                Vous recherchez un alternant rigoureux, autonome et passionné par les infrastructures IT ?<br>
+                N'hésitez pas à me contacter, je suis disponible pour échanger sur vos besoins.
             </p>
             <div class="contact-links">
-                <a href="mailto:koneidriss941@gmail.com" class="contact-link">
-                    ✉️ koneidriss941@gmail.com
+                <a href="mailto:idriss.kone@email.com" class="contact-link">
+                    ✉️ Email
                 </a>
-                <a href="tel:+33777842969" class="contact-link">
-                    📞 07 77 84 29 69
+                <a href="tel:+33600000000" class="contact-link">
+                    📞 Téléphone
                 </a>
-                <a href="https://www.linkedin.com/in/idriss-kone-518031283/" class="contact-link" target="_blank" rel="noopener">
+                <a href="https://linkedin.com/in/" class="contact-link" target="_blank" rel="noopener">
                     💼 LinkedIn
-                </a>
-                <a href="Idriss_KONE_CV_Alternance_ASSR_photo.pdf" class="contact-link" target="_blank">
-                    📄 Mon CV (PDF)
                 </a>
                 <a href="#" class="contact-link">
                     📍 Fontenay-sous-Bois, 94
@@ -422,12 +318,10 @@
         </div>
     </section>
 
-    <!-- ============ FOOTER ============ -->
     <footer class="footer">
-        <p>© 2026 <span>Idriss KONE</span></p>
+        <p>© 2026 <span>Idriss KONE</span> — Construit avec passion et précision.</p>
     </footer>
 
-    <!-- ============ SCRIPTS ============ -->
     <script>
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
@@ -483,134 +377,6 @@
                     item.style.color = '#38bdf8';
                 }
             });
-        });
-
-        // Hero background canvas animation
-        const canvas = document.getElementById('heroCanvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            let width = canvas.width = canvas.offsetWidth;
-            let height = canvas.height = canvas.offsetHeight;
-            const particles = [];
-            const colors = ["#38bdf8", "#34d399", "#a78bfa", "#fbbf24", "#818cf8"];
-            const mouse = { x: null, y: null };
-
-            const hero = document.getElementById('hero');
-            hero.addEventListener('mousemove', (e) => {
-                const rect = hero.getBoundingClientRect();
-                mouse.x = e.clientX - rect.left;
-                mouse.y = e.clientY - rect.top;
-            });
-            hero.addEventListener('mouseleave', () => {
-                mouse.x = null;
-                mouse.y = null;
-            });
-
-            function createParticle(x, y) {
-                const vx = (Math.random() - 0.5) * 1.5;
-                const vy = (Math.random() - 0.5) * 1.5;
-                particles.push({
-                    x: x,
-                    y: y,
-                    vx: vx,
-                    vy: vy,
-                    baseVx: vx,
-                    baseVy: vy,
-                    size: Math.random() * 3 + 1.5,
-                    color: colors[Math.floor(Math.random() * colors.length)],
-                    life: 0,
-                    maxLife: Math.random() * 120 + 80,
-                    pulse: Math.random() * Math.PI * 2
-                });
-            }
-
-            function animate() {
-                ctx.clearRect(0, 0, width, height);
-                
-                if (Math.random() < 0.15 && particles.length < 80) {
-                    createParticle(Math.random() * width, Math.random() * height);
-                }
-
-                // Draw connecting lines (constellation)
-                for (let i = 0; i < particles.length; i++) {
-                    for (let j = i + 1; j < particles.length; j++) {
-                        const p1 = particles[i];
-                        const p2 = particles[j];
-                        const dx = p1.x - p2.x;
-                        const dy = p1.y - p2.y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        if (dist < 90) {
-                            const alpha = Math.max(p1.life / p1.maxLife, p2.life / p2.maxLife);
-                            ctx.strokeStyle = p1.color;
-                            ctx.globalAlpha = (1 - dist / 90) * 0.12 * (1 - alpha);
-                            ctx.lineWidth = 0.5;
-                            ctx.beginPath();
-                            ctx.moveTo(p1.x, p1.y);
-                            ctx.lineTo(p2.x, p2.y);
-                            ctx.stroke();
-                        }
-                    }
-                }
-
-                for (let i = particles.length - 1; i >= 0; i--) {
-                    const p = particles[i];
-                    
-                    if (mouse.x !== null && mouse.y !== null) {
-                        const dx = mouse.x - p.x;
-                        const dy = mouse.y - p.y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        const repelDist = 120;
-                        if (dist < repelDist && dist > 0) {
-                            const force = (repelDist - dist) / repelDist;
-                            const angle = Math.atan2(dy, dx);
-                            p.vx = p.baseVx - Math.cos(angle) * force * 2.5;
-                            p.vy = p.baseVy - Math.sin(angle) * force * 2.5;
-                        } else {
-                            p.vx = p.baseVx;
-                            p.vy = p.baseVy;
-                        }
-                    } else {
-                        p.vx = p.baseVx;
-                        p.vy = p.baseVy;
-                    }
-
-                    p.x += p.vx;
-                    p.y += p.vy;
-                    p.life++;
-                    p.pulse += 0.05;
-
-                    if (p.x < 0 || p.x > width) p.baseVx *= -1;
-                    if (p.y < 0 || p.y > height) p.baseVy *= -1;
-
-                    const alpha = Math.max(0, 1 - p.life / p.maxLife) * (Math.sin(p.pulse) * 0.2 + 0.8);
-                    ctx.globalAlpha = alpha;
-                    
-                    ctx.fillStyle = p.color;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                    ctx.fill();
-
-                    ctx.globalAlpha = alpha * 0.25;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
-                    ctx.fill();
-                    
-                    if (p.life >= p.maxLife) {
-                        particles.splice(i, 1);
-                    }
-                }
-                
-                ctx.globalAlpha = 1;
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-
-            window.addEventListener('resize', () => {
-                width = canvas.width = canvas.offsetWidth;
-                height = canvas.height = canvas.offsetHeight;
-            });
-        }
         });
     </script>
 
