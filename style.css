@@ -231,11 +231,25 @@ body::before {
     padding: 8rem 2rem 6rem;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+.hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.65;
 }
 
 .hero-content {
     max-width: 800px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-badge {
@@ -865,6 +879,131 @@ body::before {
     transform: translateY(0);
 }
 
+/* --- Parcours Section --- */
+.parcours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.parcours-subtitle {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-institution {
+    font-size: 0.95rem;
+    color: var(--accent-violet);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-desc-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Veille Technologique --- */
+.veille-container {
+    background: var(--gradient-card);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-xl);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.veille-container:hover {
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+.veille-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.veille-badge {
+    padding: 0.4rem 1rem;
+    background: var(--accent-cyan-dim);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+}
+
+.veille-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.veille-info-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.veille-info-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.veille-info-card p, .veille-info-card ul {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.veille-info-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.veille-info-card li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.veille-info-card li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+}
+
+/* --- Project & Button SM Utility --- */
+.project-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .nav-links {
@@ -900,8 +1039,19 @@ body::before {
     .about-content,
     .skills-grid,
     .projects-grid,
-    .soft-skills-grid {
+    .soft-skills-grid,
+    .parcours-grid,
+    .veille-grid {
         grid-template-columns: 1fr;
+    }
+
+    .parcours-grid,
+    .veille-grid {
+        gap: 2rem;
+    }
+
+    .veille-container {
+        padding: 1.5rem;
     }
 
     .project-featured {
